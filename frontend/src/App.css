@@ -1,0 +1,1118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles */
+.header-title {
+  color: white;
+  margin: 0 16px;
+}
+
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+}
+
+.ant-layout-sider {
+  background: #fff;
+}
+
+.description-edit-form {
+  margin-top: 16px;
+}
+
+.model-metadata {
+  margin-bottom: 24px;
+}
+
+.model-metadata .ant-descriptions-item {
+  padding-bottom: 8px;
+}
+
+.tabs-container {
+  margin-top: 24px;
+}
+
+.tag-list {
+  margin-top: 8px;
+}
+
+.tag-list .ant-tag {
+  margin-bottom: 8px;
+}
+
+.suggestions-card {
+  margin-top: 16px;
+}
+
+.model-tabs {
+  margin-top: 16px;
+}
+
+.lineage-search {
+  margin-bottom: 16px;
+}
+
+.dashboard-stats {
+  margin-bottom: 24px;
+}
+
+.app-header {
+  padding: 0;
+  background: #001529;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 24px;
+}
+
+/* Logo styling */
+.logo-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 24px;
+  color: white;
+  margin-right: 12px;
+}
+
+.app-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Navigation styling */
+.nav-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-section .ant-menu {
+  background: transparent;
+  border-bottom: none;
+  line-height: 70px;
+}
+
+.nav-section .ant-menu-item {
+  padding: 0 20px;
+  margin: 0 4px;
+  font-size: 15px;
+}
+
+/* Menu item styling - improved selected state */
+.ant-menu-horizontal > .ant-menu-item {
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+  color: #1890ff !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected {
+  background-color: rgba(24, 144, 255, 0.2) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom: 2px solid #1890ff !important;
+}
+
+/* Action buttons styling */
+.action-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Content area needs to account for fixed header */
+.app-content {
+  padding: 24px;
+  margin: 24px;
+  background: #fff;
+  border-radius: 4px;
+  min-height: 280px;
+  margin-top: 94px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.logo svg {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* Dashboard styles */
+.dashboard-stats {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card .anticon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.stat-card .ant-statistic-title {
+  margin-bottom: 0;
+}
+
+/* Project styles */
+.project-card {
+  height: 100%;
+}
+
+.project-card .ant-card-head {
+  min-height: 48px;
+}
+
+.project-card .ant-card-body {
+  padding: 16px;
+}
+
+/* Model styles */
+.model-card {
+  margin-bottom: 16px;
+}
+
+.model-metadata {
+  margin-bottom: 24px;
+}
+
+.model-search {
+  margin-bottom: 16px;
+}
+
+/* Lineage Explorer */
+.lineage-search {
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+/* Highlight tags for models */
+.tag-source {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+  color: #1890ff;
+}
+
+.tag-model {
+  background-color: #f6ffed;
+  border-color: #b7eb8f;
+  color: #52c41a;
+}
+
+.tag-seed {
+  background-color: #fff7e6;
+  border-color: #ffd591;
+  color: #fa8c16;
+}
+
+.tag-test {
+  background-color: #fff1f0;
+  border-color: #ffa39e;
+  color: #f5222d;
+}
+
+/* SQL Syntax Highlighting */
+.sql-code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 4px;
+  padding: 16px;
+  overflow: auto;
+  background-color: #f6f8fa;
+  border: 1px solid #eaecef;
+}
+
+/* Description editing */
+.description-edit-button {
+  margin-left: 8px;
+}
+
+/* Table styles */
+.column-table .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+.loading, .error {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.loading {
+  background-color: #e8f4fd;
+  border: 1px solid #7fbdff;
+}
+
+.error {
+  background-color: #ffe8e8;
+  border: 1px solid #ff7f7f;
+}
+
+.troubleshooting {
+  text-align: left;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Add this to your App.css file */
+.projects-visual {
+  margin: 20px 0;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.project-box {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.model-count {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.percentage-bar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+}
+
+/* Layout styles */
+.app-layout {
+  min-height: 100vh;
+}
+
+.logo {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.logo svg {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+/* Improve menu item spacing */
+.ant-menu-horizontal {
+  line-height: 64px;
+  border-bottom: none !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  font-weight: 500;
+  margin: 0 8px;
+  padding: 0 16px;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-item-selected {
+  color: #1890ff !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom: 2px solid #1890ff !important;
+}
+
+.content-container {
+  background: white;
+  padding: 24px;
+  min-height: 280px;
+  border-radius: 4px;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.app-footer {
+  text-align: center;
+  padding: 16px;
+  background: #001529;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Loading and error styles */
+.app-loading,
+.app-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  text-align: center;
+  margin-top: 64px; /* Account for fixed header */
+}
+
+.app-loading p,
+.app-error p {
+  margin-top: 16px;
+}
+
+.troubleshooting {
+  text-align: left;
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+/* Dashboard styles */
+.stats-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  flex: 1;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.stat-card h3 {
+  margin-bottom: 8px;
+  color: #595959;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.dashboard-overview {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+/* Project styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.project-card {
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  color: #1890ff;
+}
+
+.project-models {
+  margin-top: 16px;
+  font-weight: bold;
+  color: #52c41a;
+}
+
+/* Table styles */
+.models-table,
+.lineage-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+  background-color: #fafafa;
+  font-weight: bold;
+  color: #595959;
+}
+
+.model-row:hover,
+.lineage-row:hover {
+  background-color: #f9f9f9;
+}
+
+.project-badge {
+  display: inline-block;
+  background-color: #e6f7ff;
+  color: #1890ff;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.project-badge.small {
+  margin-left: 8px;
+  font-size: 10px;
+  padding: 1px 6px;
+}
+
+/* Lineage section */
+.lineage-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 700px; /* Increased height for better visibility */
+}
+
+.lineage-container .react-flow__node {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.lineage-container .react-flow__node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.lineage-container .react-flow__edge {
+  transition: all 0.3s ease;
+}
+
+.lineage-container .react-flow__edge.highlighted {
+  stroke-width: 2;
+  stroke: #1890ff;
+}
+
+.lineage-container .react-flow__controls {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.lineage-container .react-flow__minimap {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Legend for lineage visualization */
+.lineage-legend {
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.lineage-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.lineage-legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-selected {
+  background-color: #e6f7ff;
+  border: 2px solid #1890ff;
+}
+
+.legend-connected {
+  background-color: #f0f9ff;
+  border: 1px solid #69c0ff;
+}
+
+.legend-regular {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 16px;
+  }
+  
+  .logo {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  
+  .navigation {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .app-content {
+    margin-top: 120px; /* Increased space for multi-line header */
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 16px;
+  }
+}
+
+.lineage-hint {
+  text-align: center;
+  margin-top: 8px;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.deduplication-notice {
+  background-color: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #8c6d2c;
+}
+
+/* Model Detail Page */
+.model-detail-container {
+  padding: 24px;
+}
+
+.card-title {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.file-path-display {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  padding: 4px 8px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 8px;
+}
+
+.file-path-display .file-name {
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.file-path-display .directory-path {
+  color: #8c8c8c;
+  margin-right: 4px;
+}
+
+.file-path-header {
+  font-size: 14px;
+  color: #595959;
+  margin-left: 42px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #f5f5f5;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.sql-code {
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 500px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.lineage-graph-container {
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.description-block {
+  margin-bottom: 16px;
+}
+
+.description-header {
+  margin-bottom: 8px;
+}
+
+.description-edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Additional styles for model lineage */
+.node rect {
+  fill: #fff;
+  stroke: #1890ff;
+  stroke-width: 2px;
+}
+
+.node.current rect {
+  fill: #e6f7ff;
+  stroke: #1890ff;
+  stroke-width: 3px;
+}
+
+.node text {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.link {
+  fill: none;
+  stroke: #999;
+  stroke-opacity: 0.6;
+  stroke-width: 1.5px;
+}
+
+.model-list-table .ant-table-cell {
+  vertical-align: top;
+}
+
+/* Make sure links within table cells are properly styled */
+.ant-table-cell a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.ant-table-cell a:hover {
+  color: #40a9ff;
+  text-decoration: underline;
+}
+
+.header-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.header-buttons .ant-btn {
+  display: flex;
+  align-items: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.feature-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.feature-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #1890ff;
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  color: #595959;
+}
+
+/* Advanced Search Component */
+.advanced-search {
+  margin-bottom: 24px;
+}
+
+.advanced-search .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.advanced-search .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 16px;
+}
+
+.search-card-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.advanced-search .ant-input-affix-wrapper {
+  border-radius: 6px;
+  height: 40px;
+}
+
+.advanced-search .ant-input-affix-wrapper:hover {
+  border-color: #40a9ff;
+}
+
+.advanced-search .ant-form-item-label {
+  font-weight: 500;
+}
+
+.cross-project-link {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  background-color: #f5f5f5;
+  margin-top: 6px;
+}
+
+.cross-project-link:hover {
+  background-color: #e6f7ff;
+}
+
+.related-model-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed #f0f0f0;
+}
+
+.related-model-section h4 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.related-models-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.related-model-tag {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.related-model-tag:hover {
+  transform: translateY(-2px);
+}
+
+/* Project Badges */
+.project-badge-small {
+  padding: 2px 6px;
+  font-size: 11px;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
+/* Cross-project relationship indicators */
+.cross-project-indicator {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  background-color: #fff7e6;
+  color: #d48806;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  border: 1px solid #ffe58f;
+}
+
+.cross-project-indicator .anticon {
+  margin-right: 4px;
+  font-size: 10px;
+}
+
+/* Related Models Component */
+.related-models-container {
+  margin-top: 24px;
+}
+
+.related-models-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cross-project-summary {
+  background-color: #fafafa;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.cross-project-tags {
+  margin-top: 8px;
+}
+
+.cross-project-tags .ant-tag {
+  margin-bottom: 6px;
+}
+
+.related-section {
+  margin-bottom: 24px;
+}
+
+.related-section:last-child {
+  margin-bottom: 0;
+}
+
+.project-model-groups {
+  margin-top: 8px;
+}
+
+.project-model-group {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.project-model-group:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.cross-project-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cross-project-header .ant-typography {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/* Add these styles for the search prompt and no results alerts */
+.search-prompt, .search-no-results {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.search-prompt .ant-alert, .search-no-results .ant-alert {
+  border: none;
+  background: transparent;
+}
+
+/* Add some margin to the search component */
+.advanced-search {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments for the navbar */
+@media (max-width: 768px) {
+  .header-container {
+    height: auto;
+    padding: 10px 16px;
+  }
+  
+  .nav-section .ant-menu {
+    line-height: 50px;
+  }
+  
+  .app-content {
+    margin-top: 120px;
+  }
+} 

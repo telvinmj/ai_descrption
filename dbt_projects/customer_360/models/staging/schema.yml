@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Staged customer data"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_customer_feedback
+    description: "Staged customer feedback data"
+    columns:
+      - name: feedback_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_customer_preferences
+    description: "Staged customer preferences data"
+    columns:
+      - name: preference_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null 

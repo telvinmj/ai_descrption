@@ -1,0 +1,33 @@
+[
+  {
+    "model_name": "model_missing_all",
+    "project": "test_project",
+    "model_missing_desc": false,
+    "missing_columns": [
+      "col_1",
+      "col_2",
+      "col_3"
+    ]
+  },
+  {
+    "model_name": "model_missing_desc",
+    "project": "test_project",
+    "model_missing_desc": true,
+    "missing_columns": []
+  },
+  {
+    "model_name": "model_missing_some_cols",
+    "project": "test_project",
+    "model_missing_desc": false,
+    "missing_columns": [
+      "col_5",
+      "col_6"
+    ]
+  },
+  {
+    "model_name": "model_missing_all",
+    "project": "test_project",
+    "model_missing_desc": true,
+    "missing_columns": []
+  }
+]

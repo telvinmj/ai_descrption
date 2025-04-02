@@ -1,0 +1,78 @@
+[
+  {
+    "name": "test_model_1",
+    "project": "test_project",
+    "description": "This is a test description for test_model_1",
+    "columns": [
+      {
+        "name": "id",
+        "type": "integer",
+        "description": "This is a description for column id",
+        "ai_description": "This is an AI description for column id",
+        "ai_confidence_score": 1,
+        "user_edited": false
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "description": "This is a description for column name",
+        "ai_description": "This is an AI description for column name",
+        "ai_confidence_score": 3,
+        "user_edited": false
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp",
+        "description": "This is a description for column created_at",
+        "ai_description": "This is an AI description for column created_at",
+        "ai_confidence_score": 5,
+        "user_edited": false
+      }
+    ],
+    "ai_description": "This is a test AI description for test_model_1",
+    "ai_confidence_score": 3,
+    "user_edited": false
+  },
+  {
+    "name": "test_model_2",
+    "project": "test_project",
+    "description": "This is a test description for test_model_2",
+    "columns": [
+      {
+        "name": "user_id",
+        "type": "integer",
+        "description": "This is a description for column user_id",
+        "ai_description": "This is an AI description for column user_id",
+        "ai_confidence_score": 2,
+        "user_edited": false
+      },
+      {
+        "name": "product_id",
+        "type": "integer",
+        "description": "This is a description for column product_id",
+        "ai_description": "This is an AI description for column product_id",
+        "ai_confidence_score": 1,
+        "user_edited": false
+      },
+      {
+        "name": "quantity",
+        "type": "integer",
+        "description": "This is a description for column quantity",
+        "ai_description": "This is an AI description for column quantity",
+        "ai_confidence_score": 2,
+        "user_edited": false
+      },
+      {
+        "name": "price",
+        "type": "float",
+        "description": "This is a description for column price",
+        "ai_description": "This is an AI description for column price",
+        "ai_confidence_score": 2,
+        "user_edited": false
+      }
+    ],
+    "ai_description": "This is a test AI description for test_model_2",
+    "ai_confidence_score": 3,
+    "user_edited": false
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "name": "model_complete",
+    "project": "test_project",
+    "columns": [
+      {
+        "name": "col_1",
+        "type": "integer",
+        "description": "Description for column col_1"
+      },
+      {
+        "name": "col_2",
+        "type": "timestamp",
+        "description": "Description for column col_2"
+      },
+      {
+        "name": "col_3",
+        "type": "integer",
+        "description": "Description for column col_3"
+      },
+      {
+        "name": "col_4",
+        "type": "boolean",
+        "description": "Description for column col_4"
+      },
+      {
+        "name": "col_5",
+        "type": "integer",
+        "description": "Description for column col_5"
+      }
+    ],
+    "description": "Description for model model_complete"
+  },
+  {
+    "name": "model_missing_desc",
+    "project": "test_project",
+    "columns": [
+      {
+        "name": "col_1",
+        "type": "boolean",
+        "description": "Description for column col_1"
+      },
+      {
+        "name": "col_2",
+        "type": "float",
+        "description": "Description for column col_2"
+      },
+      {
+        "name": "col_3",
+        "type": "timestamp",
+        "description": "Description for column col_3"
+      },
+      {
+        "name": "col_4",
+        "type": "boolean",
+        "description": "Description for column col_4"
+      },
+      {
+        "name": "col_5",
+        "type": "timestamp",
+        "description": "Description for column col_5"
+      }
+    ],
+    "description": "AI-generated description for model_missing_desc during reprocessing",
+    "ai_description": "AI-generated description for model_missing_desc during reprocessing",
+    "ai_confidence_score": 5,
+    "needs_review": false,
+    "user_edited": false
+  },
+  {
+    "name": "model_missing_some_cols",
+    "project": "test_project",
+    "columns": [
+      {
+        "name": "col_1",
+        "type": "string",
+        "description": "Description for column col_1"
+      },
+      {
+        "name": "col_2",
+        "type": "string",
+        "description": "Description for column col_2"
+      },
+      {
+        "name": "col_3",
+        "type": "timestamp",
+        "description": "Description for column col_3"
+      },
+      {
+        "name": "col_4",
+        "type": "string",
+        "description": "Description for column col_4"
+      },
+      {
+        "name": "col_5",
+        "type": "timestamp",
+        "description": "AI-generated description for column col_5 during reprocessing",
+        "ai_description": "AI-generated description for column col_5 during reprocessing",
+        "ai_confidence_score": 1,
+        "needs_review": true,
+        "user_edited": false
+      },
+      {
+        "name": "col_6",
+        "type": "timestamp",
+        "description": "AI-generated description for column col_6 during reprocessing",
+        "ai_description": "AI-generated description for column col_6 during reprocessing",
+        "ai_confidence_score": 5,
+        "needs_review": false,
+        "user_edited": false
+      },
+      {
+        "name": "col_7",
+        "type": "timestamp",
+        "description": "Description for column col_7"
+      },
+      {
+        "name": "col_8",
+        "type": "string",
+        "description": "Description for column col_8"
+      },
+      {
+        "name": "col_9",
+        "type": "string",
+        "description": "Description for column col_9"
+      },
+      {
+        "name": "col_10",
+        "type": "integer",
+        "description": "Description for column col_10"
+      }
+    ],
+    "description": "Description for model model_missing_some_cols"
+  },
+  {
+    "name": "model_missing_all",
+    "project": "test_project",
+    "columns": [
+      {
+        "name": "col_1",
+        "type": "integer",
+        "description": "AI-generated description for column col_1",
+        "ai_description": "AI-generated description for column col_1",
+        "ai_confidence_score": 5,
+        "needs_review": false,
+        "user_edited": false
+      },
+      {
+        "name": "col_2",
+        "type": "integer",
+        "description": "AI-generated description for column col_2",
+        "ai_description": "AI-generated description for column col_2",
+        "ai_confidence_score": 5,
+        "needs_review": false,
+        "user_edited": false
+      },
+      {
+        "name": "col_3",
+        "type": "string",
+        "description": "AI-generated description for column col_3",
+        "ai_description": "AI-generated description for column col_3",
+        "ai_confidence_score": 3,
+        "needs_review": false,
+        "user_edited": false
+      }
+    ],
+    "description": "AI-generated description for model_missing_all during reprocessing",
+    "ai_description": "AI-generated description for model_missing_all during reprocessing",
+    "ai_confidence_score": 3,
+    "needs_review": false,
+    "user_edited": false
+  }
+]

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: customer_360
+    schema: main
+    tables:
+      - name: raw_customers
+      - name: raw_customer_preferences
+      - name: raw_customer_feedback
+  - name: retail_ops
+    schema: main
+    tables:
+      - name: raw_sales
+      - name: raw_products 

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: customer_data
+    schema: main
+    tables:
+      - name: raw_customers
+      - name: raw_customer_preferences
+      - name: raw_customer_feedback 
